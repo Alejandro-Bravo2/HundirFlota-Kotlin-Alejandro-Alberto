@@ -1,6 +1,6 @@
 package org.alejandro.kotlin
 
-fun establecerConexion(diccionarioJugador : MutableMap<String,Any>, rutaJugador : String) {
+fun establecerConexion(diccionarioJugador : MutableMap<String,Any>) {
     val general = FicheroGeneral()
     val existencia = general.comprobarExistencia()
     val nombreJugador : String
@@ -8,14 +8,11 @@ fun establecerConexion(diccionarioJugador : MutableMap<String,Any>, rutaJugador 
         general.crearFichero()
     }
 
-    if (rutaJugador == "None"){
-        nombreJugador = general.revisarJugadores()
-        general.agregarJugadorAPartida()
+    nombreJugador = general.revisarJugadores()
+    general.agregarJugadorAPartida()
 
 
-    } else{
-        nombreJugador = rutaJugador
-    }
+
     var diccionarioGeneral = general.leerFichero()
     while (diccionarioGeneral["nombre_partida"] != "j1 vs j2"){
         println("Estas en la cola de espera...")

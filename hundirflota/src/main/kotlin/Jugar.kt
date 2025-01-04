@@ -14,7 +14,7 @@ fun jugar(Fjugador: FicheroUsuario, Fgeneral : FicheroGeneral, nombreJugador: St
     var nombreGeneral : String
     var comprobacionGanador : Boolean
     var ganador = false
-    while(ganador == false){ //tengo que hacer una función que compruebe que todos los estados de los barcos esten vivos o no
+    while(ganador == false){
         var diccionario = Fgeneral.leerFichero()
         if (diccionario["turno_actual"] == nombreJugador){
             var opc = true

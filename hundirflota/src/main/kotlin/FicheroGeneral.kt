@@ -133,6 +133,20 @@ class FicheroGeneral() {
             escribirFichero(diccionario)
         }
     }
+
+    fun agregarJugadorConfigurandoAPartida(){
+        var diccionario = leerFichero()
+        if (diccionario["nombre_partida"].toString() == "None") {
+            diccionario["nombre_partida"] = "j1C"
+            escribirFichero(diccionario)
+        } else if (diccionario["nombre_partida"].toString() == "j1") {
+            diccionario["nombre_partida"] = "j1 vs j2C"
+            escribirFichero(diccionario)
+        } else if (diccionario["nombre_partida"].toString() == "j1C") {
+            diccionario["nombre_partida"] = "j1C vs j2C"
+            escribirFichero(diccionario)
+        }
+    }
 }
 
 /*

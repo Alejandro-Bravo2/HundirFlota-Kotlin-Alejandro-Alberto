@@ -1,7 +1,7 @@
 package org.alejandro.kotlin
 
 
-fun menuLuegoConf(diccionarioJugador: MutableMap<String,Any>, nombreJugador: String){
+fun menuLuegoConf(diccionarioJugador: MutableMap<String,Any>){
     val rangoOpciones = Regex("[1-2]")
     limpiarPantalla()
     println("-----MENU------")
@@ -25,7 +25,7 @@ fun menuLuegoConf(diccionarioJugador: MutableMap<String,Any>, nombreJugador: Str
 
     when (entrada) {
         1 -> {
-            establecerConexion(diccionarioJugador , nombreJugador)
+            establecerConexion(diccionarioJugador)
         }
         2 -> {
             return
