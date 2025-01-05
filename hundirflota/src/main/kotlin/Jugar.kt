@@ -1,6 +1,12 @@
 package org.alejandro.kotlin
 
 
+/**
+ * Función encargada de ejecutar el juego.
+ * @param Fjugador: Fichero que contiene la información del jugador.
+ * @param Fgeneral: Fichero que contiene la información de la partida.
+ * @param nombreJugador: Nombre del jugador actual.
+ */
 fun jugar(Fjugador: FicheroUsuario, Fgeneral : FicheroGeneral, nombreJugador: String){
     val jugador2 = crearInstanciaOtroJugador(nombreJugador)
     var datosJugador2 = jugador2.leerFichero()
@@ -68,6 +74,15 @@ fun jugar(Fjugador: FicheroUsuario, Fgeneral : FicheroGeneral, nombreJugador: St
 
 }
 
+/**
+ * Función encargada de mostrarle el tablero al jugador defensor.
+ * @param tableroDefensorActualizado: Matriz que representa al tablero del defensor actualizado.
+ * @param tableroDefensor: Matriz que representa al tablero del defensor.
+ * @param Fjugador: Fichero del jugador.
+ * @param Fjugador2: Fichero del otro jugador.
+ * @param Fgeneral: Fichero general de la partida.
+ * @param nombreJugador: Nombre del jugador actual.
+ */
 fun defensor(tableroDefensorActualizado: MutableList<MutableList<String>>,tableroDefensor : MutableMap<String, Any>, Fjugador: FicheroUsuario, Fjugador2 : FicheroUsuario, Fgeneral: FicheroGeneral, nombreJugador: String){
     var datosDiccionario = Fjugador.leerFichero()
     var cambioJugador = false
@@ -105,6 +120,10 @@ fun defensor(tableroDefensorActualizado: MutableList<MutableList<String>>,tabler
     limpiarPantalla()
 }
 
+/**
+ * Función encargada de encontrar el último movimiento realizado por el otro jugador.
+ * @param diccionarioJugador: Diccionario con la información del jugador.
+ */
 fun encontrarUltimoMovimiento(diccionarioJugador: MutableMap<String, Any>) : Pair<String,String>{
     var coordenadas = diccionarioJugador["movimientos"] as MutableList<MutableList<Any>>
     var ultima = coordenadas.last() as MutableMap<String, String>
@@ -114,6 +133,11 @@ fun encontrarUltimoMovimiento(diccionarioJugador: MutableMap<String, Any>) : Pai
 }
 
 
+/**
+ * Función encargada de revisar el ganador de la partida.
+ * @param Fjugador1: Fichero del primer jugador.
+ * @param Fjugador2: Fichero del otro jugador.
+ */
 fun revisarGanadorPartida(Fjugador1 : FicheroUsuario, Fjugador2: FicheroUsuario) : Pair<String, Boolean>{
     var diccionarioJugador1 = Fjugador1.leerFichero() as MutableMap<String,Any>
     var diccionarioJugador2 = Fjugador2.leerFichero() as MutableMap<String,Any>
@@ -166,6 +190,11 @@ fun revisarGanadorPartida(Fjugador1 : FicheroUsuario, Fjugador2: FicheroUsuario)
     }
 }
 
+
+/**
+ * Función encargada de actualizar el tablero
+ * @param diccionarioJugador2: Diccionario con la información del jugador 2.
+ */
 fun actualizarTablero(diccionarioJugador2: MutableMap<String, Any>) : MutableMap<String, Any>{
     var tablero = diccionarioJugador2["tablero"] as MutableList<MutableList<String>>
     for (filas in tablero){

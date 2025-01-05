@@ -1,6 +1,14 @@
 package org.alejandro.kotlin
 
-
+/**
+ * Función encargada de asignar al atacante, pedir coordenadas, registrarlas y pedir el resultado
+ * @param tableroRealAtacante: Matriz que representa al tablero real.
+ * @param diccionarioAtacante: Diccionario con la información de los barcos atacantes.
+ * @param FjugadorACTUAL: Fichero del jugador actual.
+ * @param Fjugador2: Fichero del otro jugador.
+ * @param Fgeneral: Fichero general de la partida.
+ * @param nombreJugador: Nombre del jugador actual.
+ */
 fun atacante(tableroRealAtacante : MutableList<MutableList<String>>,diccionarioAtacante: MutableMap<String, Any>,FjugadorACTUAL : FicheroUsuario ,Fjugador2 : FicheroUsuario, Fgeneral : FicheroGeneral, nombreJugador: String ) : Boolean{
     var listaCoordenadas : MutableList<Int> = mutableListOf()
 

@@ -1,6 +1,9 @@
 package org.alejandro.kotlin
 
 
+/**
+ * Función encargada de configurar los barcos al inicio de la partida
+ */
 fun configurarBarcos(){
 
 
