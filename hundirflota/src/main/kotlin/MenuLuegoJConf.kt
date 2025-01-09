@@ -2,7 +2,7 @@ package org.alejandro.kotlin
 
 
 /**
- * Función encargada de mostrar el menú por pantalla
+ * Función encargada de mostrar el menú por pantalla tras la configuración de los barcos.
  * @param diccionarioJugador: Diccionario con la información del jugador.
  */
 fun menuLuegoConf(diccionarioJugador: MutableMap<String,Any>){
