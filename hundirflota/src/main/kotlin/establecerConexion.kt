@@ -1,5 +1,9 @@
 package org.alejandro.kotlin
 
+/**
+ * Función encargada de establecer conexión con otro jugador.
+ * @param diccionarioJugador: Diccionario con la información del jugador.
+ */
 fun establecerConexion(diccionarioJugador : MutableMap<String,Any>) {
     val general = FicheroGeneral()
     val existencia = general.comprobarExistencia()

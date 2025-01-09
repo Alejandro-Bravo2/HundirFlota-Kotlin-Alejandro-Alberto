@@ -2,8 +2,8 @@ package org.alejandro.kotlin
 
 
 /**
- * Función encarga de cambiar el turno, ESTA FUNCIÓN NO REVISA SI EL TURNO
- * HA SIDO CAMBIADO, SI NO QUE LO CAMBIA Y .
+ * Función encargada de cambiar el turno.
+ * Esta función no revisa si el turno ha sido cambiado, sino que cambia el jugador atacante.
  */
 fun cambioTurno(){
     val diccionarioGeneral = FicheroGeneral()
