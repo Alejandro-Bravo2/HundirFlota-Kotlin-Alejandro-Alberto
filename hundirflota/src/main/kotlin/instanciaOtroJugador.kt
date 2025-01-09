@@ -2,7 +2,7 @@ package org.alejandro.kotlin
 
 
 /**
- * Función encargada de guardar en una variable el fichero del otro jugador.
+ * Función encargada de guardar el fichero del otro jugador.
  * @param nombreJugador: Nombre del jugador actual.
  */
 fun crearInstanciaOtroJugador(nombreJugador: String) : FicheroUsuario {
