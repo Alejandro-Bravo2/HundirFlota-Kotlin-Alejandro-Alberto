@@ -7,9 +7,9 @@
 ---
 
 ### Descripción:
-
-- **Función para establecer conexión local:** Para poder comenzar el juego, se necesitarán abrir 2 pestañas en IntelliJ IDEA
-donde se tendrá que ejecutar el programa para poder establecer la conexión local. Aquí se leerán los ficheros para poder acceder a la información necesaria para que el programa funcione correctamente.
+Para poder comenzar el juego, se necesitarán abrir 2 pestañas en IntelliJ IDEA
+donde se tendrá que ejecutar el programa para poder establecer la conexión local. Estas son las distintas funciones que constituyen el programa:
+- **Función para establecer conexión local:** Aquí se leerán los ficheros para poder acceder a la información necesaria para que el programa funcione correctamente.
 https://github.com/Alejandro-Bravo2/HundirFlota-Kotlin-Alejandro-Alberto/blob/cc0f92adcded6cb91cd0da3ba99802fc381ef17e/hundirflota/src/main/kotlin/establecerConexion.kt#L7-L38
 
 - **Función para el menú:** A ambos jugadores se les recibe con un menú donde pueden darle comienzo al juego o configurar sus propios
